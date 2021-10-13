@@ -1,3 +1,7 @@
+# Backend
+
+This project requires running of the node typescript backend service which listens on `http://localhost:6060` click [here](https://github.com/hkhan29/NASA-Backend) for instructions on how to run the service locally.
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0-next.9.
