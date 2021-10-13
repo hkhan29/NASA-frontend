@@ -1,3 +1,6 @@
-<div *ngFor="let photo of display.message.photos">
-    <img style="cursor: pointer;" src="{{photo.img_src}}" onclick="window.open(this.src)">
-</div>
+<mat-card *ngFor="let photo of display.message.photos">
+    <mat-card-header>
+        <mat-card-title>{{photo.camera.full_name}}</mat-card-title>
+      </mat-card-header>
+      <img style="cursor: pointer;" src="{{photo.img_src}}" onclick="window.open(this.src)">
+</mat-card>
