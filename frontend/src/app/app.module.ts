@@ -3,16 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainComponent } from './components/main/main.component';
+import { DisplayComponent } from './components/display/display.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { BackendService } from './services/backend.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BackendService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

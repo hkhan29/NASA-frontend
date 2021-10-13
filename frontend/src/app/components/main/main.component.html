@@ -1,0 +1,10 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div>
+      <label>
+        Date:
+        <input formControlName="date" placeholder="Search by NASA Rover date in YYYY-MM-DD">
+      </label>
+    </div>
+    <button type="submit">Send</button>
+</form>
+<app-display *ngIf="display" [display]="display"></app-display>
